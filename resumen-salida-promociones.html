@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Selección de butacas en Cinetime</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="header-checkout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <ul class="progressbar">
+                        <li class="active"><a href="seleccion-de-butacas.html" class="estilizado"><span><i class="fas fa-check-circle"></i><br>Butacas</span></a></li>
+                        <li><a href="#" class="estilizado"><span><br>Pago</span></a></li>
+                        <li><a href="#"><span><br>Entradas</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-4"><img src="images/resumen-rey-leon.png"></div>
+                <div class="col-8">
+                    <h2>El Rey León</h2>
+                    <p>Hoyts Abasto - 3D Subtitulada<br>
+                        Martes 20/12 - 23:30hs.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Tus entradas</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="opciones-precio">
+                    <div class="col-12 d-flex">
+                        <div class="col-6">
+                            <p>3 entradas</p>
+                        </div>
+                        <div class="col-6 text-right">
+                            <p>$300c/u</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <div class="col-6">
+                            <p>2x1</p>
+                        </div>
+                        <div class="col-6 text-right">
+                            <p>- $300c/u</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <div class="col-6 text-bold">
+                            <p>Total a pagar</p>
+                        </div>
+                        <div class="col-6 text-right text-bold">
+                            <p>$600</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="opciones-adicional">
+                    <a href="promociones.html">
+                        <div class="col-12">
+                            <h2>Agregá promociones</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="opciones-adicional">
+                    <div class="col-12">
+                        <h2>¿Querés agregar snacks y bebidas a tu salida?</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer class="total">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Total a pagar</h2>
+                    <h3 class="precio-total">$900</h3>
+                </div>
+                <div class="col-6">
+                    <div class="row"><a href="metodo-de-pago.html" class="btn btn-lg btn-primary">Pagar</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).on('click', '.number-spinner button', function() {
+            var btn = $(this),
+                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                newVal = 0;
+
+            if (btn.attr('data-dir') == 'up') {
+                newVal = parseInt(oldValue) + 1;
+            } else {
+                if (oldValue > 1) {
+                    newVal = parseInt(oldValue) - 1;
+                } else {
+                    newVal = 1;
+                }
+            }
+            btn.closest('.number-spinner').find('input').val(newVal);
+        });
+    </script>
+
+</body></html>

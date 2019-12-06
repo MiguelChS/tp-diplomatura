@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Login CineTime</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-1">
+                    <a href="index.html"><i class="fas fa-chevron-left"></i></a>
+                </div>
+                <div class="col-10">
+                    <h1>CineTime</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs w-100" id="initial" role="tablist">
+                        <li class="nav-item w-50">
+                            <a class="nav-link active" id="tab-registro" data-toggle="tab" href="#registro" role="tab" aria-controls="registro" aria-selected="true">Registrarse</a>
+                        </li>
+                        <li class="nav-item w-50">
+                            <a class="nav-link" id="tab-inicio" data-toggle="tab" href="#inicio-sesion" role="tab" aria-controls="inicio" aria-selected="false">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="ingresar">
+                        <div class="tab-pane fade show active" id="registro" role="tabpanel" aria-labelledby="registro">
+                            <div class="col-12 d-flex">
+                                <div class="col-6 bot-red">
+                                    <a href="registro-facebook.html" class="btn btn-secondary btn-lg m-top"><i class="fab fa-facebook-f"></i> Ingresar</a></div>
+                                <div class="col-6 bot-red">
+                                    <a href="registro-google.html" class="btn btn-secondary btn-lg m-top back-google"><img src="images/logo-google.png" alt="Google"> Ingresar</a></div>
+
+                            </div>
+                            <div class="col-12 bord-bottom">
+                                <h2>O registrate con tu mail</h2>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Nombre y apellido</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="nombre" placeholder="Ingresá tu nombre y apellido">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Ejemplo: hola@tuemail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Ingresa una contraseña de 8 caracteres">
+                                    <small>Ingresá una contraseña de 8 caractéres</small>
+                                </div>
+                                <button type="submit" class="btn btn-primary m-top">Registrarse</button>
+                                <small>Al hacer click en Registrarse, estás aceptando las Condiciones del servicio y la Política de privacidad.</small>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="inicio-sesion" role="tabpanel" aria-labelledby="inicio">
+                            <div class="col-12 d-flex">
+                                <div class="col-6 bot-red">
+                                    <a href="registro-facebook.html" class="btn btn-secondary btn-lg m-top"><i class="fab fa-facebook-f"></i> Ingresar</a></div>
+                                <div class="col-6 bot-red">
+                                    <a href="registro-google.html" class="btn btn-secondary btn-lg m-top back-google"><img src="images/logo-google.png" alt="Google"> Ingresar</a></div>
+                            </div>
+                            <div class="col-12 bord-bottom">
+                                <h2>Ingresá a CineTime</h2>
+                            </div>
+                            <form class="w100">
+                                <div class="form-group">
+                                    <label for="email-inicio">Email</label>
+                                    <input type="email" class="form-control" id="email-inicio" placeholder="Ejemplo: hola@tuemail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Ingresa una contraseña de 5 caracteres">
+                                </div>
+                                <button type="submit" class="btn btn-primary m-top">Iniciar sesión</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Aviso legal</h4>
+                </div>
+                <div class="col-12"><a href="#">Política de cookies</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body></html>

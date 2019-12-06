@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Elegir cine Cinetime</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-1"><a href="nueva-salida.html" title="Volver a Nueva salida"><i class="fas fa-chevron-left"></i></a></div>
+                <div class="col-10">
+                    <h1>Elegir Cine</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar cine" aria-label="Buscar cine">
+
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 embed-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d52545.9129038212!2d-58.45492362220487!3d-34.60113818496399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scines%20palermo!5e0!3m2!1ses!2sar!4v1574896957035!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Listado de cines</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seleccion-pelicula">
+                    <div class="cine" id="groupRadio">
+                        <div class="custom-control custom-radio">
+                            <input onclick="seleccionarCine(this)" type="radio" id="customRadio1" value="Village Palermo" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="customRadio1">Village Palermo <br><span class="dir-cine">Santa Fe 9300</span></label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input onclick="seleccionarCine(this)" type="radio" id="customRadio2" value="Cinemarck Bulnes" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="customRadio2">Cinemarck Bulnes <br><span class="dir-cine">Bulnes 1345</span></label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input onclick="seleccionarCine(this)" type="radio" id="customRadio3" value="Hoyts Patio Bulrich" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="customRadio3">Hoyts Patio Bulrich <br><span class="dir-cine">Av libertador 4200</span></label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input onclick="seleccionarCine(this)" type="radio" id="customRadio4" value="Hoyts Abasto" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="customRadio4">Hoyts Abasto <br><span class="dir-cine">Av. Corrientes 1300</span></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row"><a href="nueva-salida.html" class="btn btn-lg btn-primary">Seleccionar</a></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Aviso legal</h4>
+                </div>
+                <div class="col-12">
+                    <a href="#">Política de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).on('click', '.number-spinner button', function() {
+            var btn = $(this),
+                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                newVal = 0;
+
+            if (btn.attr('data-dir') == 'up') {
+                newVal = parseInt(oldValue) + 1;
+            } else {
+                if (oldValue > 1) {
+                    newVal = parseInt(oldValue) - 1;
+                } else {
+                    newVal = 1;
+                }
+            }
+            btn.closest('.number-spinner').find('input').val(newVal);
+        });
+        function seleccionarCine(radioDom){
+            window.localStorage.setItem("cine", radioDom.value);
+        }
+        (function(){
+            var cine = window.localStorage.getItem("cine");
+            if(cine){
+                document.querySelectorAll("#groupRadio input[type='radio']").forEach(function(input){
+                    if(input.value == cine){
+                        input.click();
+                    }
+                });
+            }
+        })()
+    </script>
+
+</body></html>

@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* CSS Document */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .section-1-box .section-1-box-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+}
+
+@media (min-width: 780px) and (max-width: 991px) {
+    .logo-nav img {
+        width: 40%
+    }
+
+    .wraper-login {
+        width: 40%;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+
+    .inner-bg {
+        padding: 180px 0;
+    }
+
+    .section-description p {
+        padding: 0;
+    }
+
+    .section-1-box .section-1-box-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+    .section-3-box .section-3-box-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+
+}
+
+@media (max-width: 780px) {
+    .logo-nav img {
+        width: 20%
+    }
+
+    .menu-collapse {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav {
+        border-top: #fff solid thin !important;
+        margin-top: 0.5rem
+    }
+
+    .datos-config {
+        width: 75%;
+        margin-top: 1.2rem
+    }
+
+    #out {
+        width: 10%
+    }
+
+    .navbar-brand {
+        width: 10%
+    }
+
+    .nav-item {
+        border: 0px
+    }
+
+    .boxes:first-child {
+        order: 1;
+    }
+
+    .boxes:nth-child(2) {
+        order: 3;
+    }
+
+    .boxes:nth-child(3) {
+        order: 2;
+    }
+
+    .boxes:nth-child(4) {
+        order: 4;
+    }
+
+    .wraper-login {
+        width: 90%;
+    }
+
+    .navbar.navbar-no-bg {
+        background: #7e1974;
+    }
+
+    .navbar-dark .navbar-toggler {
+        border-color: #7e1974;
+    }
+
+    .navbar-dark .navbar-toggler:focus {
+        background: #7e1974;
+        outline: 0;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .inner-bg {
+        padding: 100px 0 80px 0;
+    }
+
+    .section-description p {
+        padding: 0;
+    }
+
+    .section-1-container {
+        padding-bottom: 60px;
+    }
+
+    .section-1-box {
+        text-align: center;
+    }
+
+    .section-1-box h3 {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    .section-3-box {
+        text-align: center;
+    }
+
+    .section-3-box h3 {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    .filter-survey:first-child {
+        order: 2;
+        margin-top: 2%;
+    }
+
+    .filter-survey:nth-child(2) {
+        order: 3;
+        margin-top: 2%;
+    }
+
+    .filter-survey:nth-child(3) {
+        order: 4;
+        margin-top: 2%;
+    }
+
+    .filter-survey:nth-child(4) {
+        order: 1;
+        margin-top: 2%;
+    }
+
+    .filter-search:first-child {
+        order: 2;
+        margin-top: 2%;
+    }
+
+    .filter-search:nth-child(2) {
+        order: 1;
+    }
+
+    .border-separation {
+        border-right: solid white 0px;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .menu-collapse {
+        width: 100%
+    }
+
+    .datos-config {
+        width: 75%
+    }
+
+    h1,
+    h2 {
+        font-size: 32px;
+    }
+
+    .navbar-brand {
+        width: 10%
+    }
+
+}
+
+
+/* Retina-ize images/icons */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}

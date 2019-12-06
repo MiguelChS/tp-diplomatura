@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Elegir días y horarios en Cinetime</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+     
+    <script type="text/javascript">
+    function showContent() {
+        element = document.getElementById("content");
+        check = document.getElementById("check");
+        if (check.checked) {
+            element.style.display='block';
+        }
+        else {
+            element.style.display='none';
+        }
+    }
+</script>
+    <script languague="javascript">
+
+        function cerrar() {
+            div = document.getElementById('content');
+            div.style.display = 'none';
+        }
+</script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-1"><a href="nueva-salida.html" title="Volver a Nueva salida"><i class="fas fa-chevron-left"></i></a></div>
+                <div class="col-10">
+                    <h1>Posibles días y horarios</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-3" id="fechas" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#hoy" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <h2>Hoy</h2>
+                                <h3>27</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#jue" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <h2>Jue</h2>
+                                <h3>28</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#vie" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <h2>Vie</h2>
+                                <h3>29</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#sab" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <h2>Sáb</h2>
+                                <h3>30</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#dom" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <h2>Dom</h2>
+                                <h3>1</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#lun" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <h2>Lun</h2>
+                                <h3>2</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#mar" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <h2>Mar</h2>
+                                <h3>3</h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="hoy" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del jueves 28/11</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="jue" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del viernes 29/11</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="vie" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del sábado 30/11</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sab" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del domingo 1/12</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="dom" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del lunes 2/12</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 4D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="lun" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del martes 3/12</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="mar" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="col-12 fechas">
+                                <div class="pt-1">
+                                    <h2>Sala 2D Subtitulada</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck1">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            00:15 <small>Madrugada del miércoles 4/12</small>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+
+
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <h2>Sala 3D Castellano</h2>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="defaultCheck4">22:30
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            23:00
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="row option-cine opcion-dia mx-auto" id="content" style="display: none;">
+                    <div class="col-9 opciones content-izq"><i class="fas fa-calendar-day"></i> Mie. 27/11 -  22:30 - 2D Sub.</div>
+               <div class="col-2 text-center content-izq"><a href="javascript:cerrar();"><i class="fas fa-times"></i></a></div>
+                </div>
+            <div class="row"><a href="nueva-salida-reyleon-horario.html" class="btn btn-lg btn-primary">Aplicar</a></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Aviso legal</h4>
+                </div>
+                <div class="col-12">
+                    <a href="#">Política de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).on('click', '.number-spinner button', function() {
+            var btn = $(this),
+                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                newVal = 0;
+
+            if (btn.attr('data-dir') == 'up') {
+                newVal = parseInt(oldValue) + 1;
+            } else {
+                if (oldValue > 1) {
+                    newVal = parseInt(oldValue) - 1;
+                } else {
+                    newVal = 1;
+                }
+            }
+            btn.closest('.number-spinner').find('input').val(newVal);
+        });
+
+    </script>
+
+</body>
+
+</html>

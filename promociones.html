@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Promociones en CineTime</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10">
+                    <h1 class="text-left">Promociones</h1>
+                </div>
+                <div class="col-1 text-right">
+                    <a href="resumen-salida.html" title="Volver resumen de compra"><i class="fas fa-times"></i></a></div>
+
+            </div>
+        </div>
+    </nav>
+    <main class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="escondido col-12" id="descuento">
+                <div class="col-11">
+                    <p>50% off con Club Personal</p>
+                </div>
+                <div class="col-1 text-right"><a href="#" title="Cerrar descuento"><i class="fas fa-times"></i></a></div>
+            </div>
+        </div>
+           <div class="escondido col-12" id="promocion">
+                <div class="col-11">
+                    <p>2x1 con Club La Nación</p>
+                </div>
+                <div class="col-1 text-right"><a href="#" title="Cerrar promocion"><i class="fas fa-times"></i></a></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>2x1</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="promociones">
+                    <div class="cine">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="promolanacion" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="promolanacion">Con Club La Nación</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="promoclarin" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="promoclarin">Con Clarín 365</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="promofrances" name="customRadio" class="custom-control-input pull-right">
+                            <label class="custom-control-label" for="promofrances">Con BBVA Francés</label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Descuentos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="promociones">
+                    <div class="cine">
+                        <div class="custom-control custom-radio">
+                            <input name="descuento" type="radio" class="custom-control-input pull-right" id="codigopersonal">
+                            <label class="custom-control-label activar-descuento" for="codigopersonal">50% off con Club Personal</label>
+                        </div>
+                        <!--descuento a mostrar-->
+                        <div class="col-12 escondido" id="descuentopersonal">
+                            <div class="col-6"><label for="codigoper">Escribí tu código Personal</label><input type="text" id="codigoper"></div>
+                        </div>
+                        <!--fin descuento a mostrar-->
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="promociones">
+                        <div class="cine">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="descuentoclaro" name="descuento" class="custom-control-input pull-right">
+                                <label class="custom-control-label" for="descuentoclaro">50% off con Club Claro</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 m-top"><a href="resumen-salida-promociones.html" class="btn btn-primary btn-lg">Aplicar Promociones</a></div>
+                </div>
+            
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body></html>

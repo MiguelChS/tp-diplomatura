@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Nueva salida en Cinetime</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-1">
+                    <a href="primeros-pasos.html" title="Volver a primeros pasos"><i class="fas fa-chevron-left"></i></a></div>
+                <div class="col-10">
+                    <h1>CineTime</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid select-pelicula">
+            <a href="elegir-pelicula.html">
+                <div class="row option-cine mx-auto">
+                    <div class="col-10 opciones"><i class="fas fa-film"></i> El rey León</div>
+                    <div class="col-2 text-center"><i class="fas fa-chevron-right select-a"></i></div>
+                </div>
+            </a>
+            <a href="elegir-cine.html">
+                <div class="row option-cine mx-auto">
+                    <div class="col-10 opciones"><i class="fas fa-ticket-alt"></i> Hoyts Abasto</div>
+                    <div class="col-2 text-center"><i class="fas fa-chevron-right select-a"></i></div>
+                </div>
+            </a>
+            <div class="row option-cine mx-auto personas">
+                <div class="col-5 opciones"><i class="fas fa-users"></i> ¿Cuántas personas van?</div>
+                <div class="col-7">
+                    <div class="input-group number-spinner">
+                        <input type="text" class="form-control text-left number-person" value="1">
+                        <span class="input-group-btn">
+                            <button class="btn btn-radius" data-dir="dwn"><i class="fas fa-minus"></i></button>
+                        </span>
+                        <span class="input-group-btn">
+                            <button class="btn btn-radius" data-dir="up"><i class="fas fa-plus"></i></button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <a href="dias-y-horarios.html">
+            <div class="row option-cine mx-auto">
+                <div class="col-10 opciones"><i class="fas fa-calendar-day"></i> Seleccioná los posibles horarios</div>
+                <div class="col-2 text-center"><i class="fas fa-chevron-right select-a"></i></div>
+            </div>
+            </a>
+            <div class="row">
+                <div class="col-12 m-top"><a href="#" class="btn btn-primary btn-lg">Enviar encuesta</a></div>
+                <div class="col-12 m-top"><a href="primeros-pasos.html" class="btn btn-secondary btn-lg">Cancelar</a></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Aviso legal</h4>
+                </div>
+                <div class="col-12">
+                    <a href="#">Política de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).on('click', '.number-spinner button', function() {
+            var btn = $(this),
+                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                newVal = 0;
+
+            if (btn.attr('data-dir') == 'up') {
+                newVal = parseInt(oldValue) + 1;
+            } else {
+                if (oldValue > 1) {
+                    newVal = parseInt(oldValue) - 1;
+                } else {
+                    newVal = 1;
+                }
+            }
+            btn.closest('.number-spinner').find('input').val(newVal);
+        });
+
+    </script>
+
+</body>
+
+</html>

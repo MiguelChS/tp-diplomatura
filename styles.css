@@ -1,0 +1,664 @@
+/*tags*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*body {
+    font-size: 0.875rem;
+}*/
+
+h1 {
+    font-size: 1.25rem !important;
+}
+
+h2 {
+    font-size: 1.25rem !important;
+}
+
+h3 {
+    font-size: 0.90rem !important;
+}
+
+p,
+h4 {
+    font-size: 1rem !important;
+}
+
+header {
+    background: #05159c;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem 0px;
+
+}
+body.entradas{background-color:#05159c;
+    color: #fff;}
+header a {
+    color: #fff;
+}
+
+button {
+    width: 100%;
+}
+
+.btn-primary {
+    background: #3242c6 !important;
+    border: 0px !important;
+    width: 100%;
+}
+
+.btn img {
+    width: 1.25rem;
+    height: auto;
+}
+
+.btn-primary a {
+    color: #ffff;
+}
+
+input.number-person {
+    border: 0px !important;
+}
+
+/*tabs*/
+.nav-tabs,
+.nav-link {
+    border: 0px !important;
+}
+
+a.nav-link {
+    color: #040244;
+}
+
+.nav-link.active {
+    color: #3242c6 !important;
+    font-size: 0.875rem;
+    border-bottom: solid 3px #3242c6 !important;
+}
+
+.nav-tabs {
+
+    text-align: center;
+}
+
+div {
+    margin-top: 0.75rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*space*/
+.m-auto {
+    margin: auto;
+}
+
+.m-top {
+    margin-top: 0.75rem;
+}
+
+.p-left {
+    padding: 0.75rem;
+}
+
+/*class*/
+.option-cine {
+    border: solid 1px #cccc;
+    max-width: 98% !important;
+    margin: 0.75rem;
+    padding-top: 0.7rem;
+    min-height: 70px;
+    font-size: 14px;
+
+}
+
+.option-cine a {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.input-group-btn .btn {
+    border: solid 1px #e2e2e2;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+.input-group {
+    margin: 0px;
+    padding: 0px;
+}
+
+input.number-person {
+    font-size: 14px;
+    margin: 0px 0.95rem;
+    padding: 0px;
+
+}
+
+.input-group-btn i {
+    font-size: 1rem;
+    padding: 0px;
+}
+
+
+.seleccion-pelicula {
+    margin: 1rem;
+    background-color: #fff;
+    padding: 0.2rem 0.2rem 0.5rem;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+}
+
+.seleccion-pelicula img {
+    width: 100%;
+    height: auto;
+}
+
+.seleccion-pelicula h3 {
+    font-size: 1.5rem !important;
+}
+
+.right {
+    float: right
+}
+
+.dir-cine {
+    font-size: 0.875rem;
+    color: #535353;
+}
+
+.custom-control {
+    padding: 0.8rem;
+    border-bottom: solid 1px;
+    color: #535353;
+}
+
+.bord-bottom {
+    border-bottom: solid 1px;
+    color: #535353;
+}
+
+.select-pelicula a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-size: 1rem !important;
+}
+
+.select-pelicula {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+i.select-a {
+    color: #009ea3;
+}
+
+a.btn {
+    color: #ffff;
+    width: 100%;
+}
+
+.fav-cine {
+    font-size: 1.5rem;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.titulos {
+    font-size: 1rem;
+}
+
+.bot-red a {
+    font-size: 1rem;
+
+
+}
+
+.back-google {
+    background: #ffff !important;
+}
+
+a.back-google {
+    color: #040244;
+}
+
+a:hover.back-google {
+    color: #040244;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.resumen {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.resumen li {
+    display: inline-flex;
+}
+
+.fondo {
+    background-color: #ccc;
+    margin: 1rem;
+    width: 100%
+}
+
+button.share {
+    color: #009ea3;
+    text-align: right;
+}
+
+.btn-radius {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 40px !important;
+    margin-left: 5px;
+    background: #009ea3 !important;
+    color: #ffff !important;
+    font-weight: bold;
+}
+
+.personas {
+    padding-top: 0px !important;
+}
+
+.cine label {
+    font-size: 1.5rem;
+}
+
+#fechas .nav-link {
+    padding: .5rem 0.385rem !important;
+    text-align: center;
+}
+
+#fechas a.active {
+    background: #e0f8f8;
+    border: 0px !important;
+}
+
+.fechas {
+    background-color: #fff;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+}
+
+.form-check-input {
+    width: 10%;
+}
+
+.form-check-label {
+    width: 85%;
+}
+
+.form-check {
+    margin-left: 0px !important;
+    padding-left: 0px !important
+}
+
+
+.content-izq {
+    float: left;
+}
+
+.icon-share img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: auto
+}
+
+.respuestas-encuestas {
+    display: block;
+    padding: 5px;
+    background: #e0f8f8;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.eleccion-pelicula {
+
+    background-color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    padding-bottom: 0.75rem;
+    border-bottom: solid 1px;
+}
+
+.eleccion-pelicula img {
+    width: 100%;
+    height: auto;
+}
+
+.eleccion-pelicula h3 {
+    font-size: 1rem !important;
+}
+
+input.resumen {
+    margin: 0px;
+    padding: 0px 0px 0.5rem 0px;
+    width: 50%;
+}
+
+.f-th {
+    background: #ebebeb;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.s-th {
+    font-weight: normal;
+    font-size: 0.85rem;
+    display: inline-block
+}
+
+.esp-resultado {
+    padding-bottom: 0.7rem
+}
+
+table th {
+    width: 9rem !important;
+    padding: 0.1rem
+}
+
+table td {
+    padding: 0.5rem;
+}
+
+td,
+table,
+th {
+    border: solid 1px
+}
+
+td i {
+    color: #4f9d07
+}
+
+table {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+a.linkblue {
+    color: #3242c6
+}
+
+.bienvenida {
+    width: 70%;
+    height: auto;
+    font-size: 2.125rem
+}
+
+ul.fila {
+    margin: 0px 1rem;
+    padding: 0px;
+    list-style-type: none;
+    position: relative;
+}
+
+.fila li {
+    display: block;
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    width: 25px;
+    max-height: 23px;
+    margin: 0.2rem;
+
+}
+
+.fila input {
+    position: absolute;
+    left: 2.2px;
+    top: 3.2px;
+}
+
+.pasillo {
+    margin-right: 1rem !important
+}
+
+
+.container {
+    width: 100%;
+
+}
+
+.progressbar {
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 30%;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-left: 0.5rem;
+
+}
+
+.progressbar a {
+    display: block;
+    text-align: center;
+}
+
+.progressbar a:hover {
+    color: #fff;
+}
+
+.estilizado {
+    display: inline-block;
+    letter-spacing: 2px;
+    position: relative
+}
+
+.estilizado::after {
+    border-bottom: 1px solid #fff;
+    bottom: 20%;
+    content: "";
+    margin: 0 10px;
+    position: absolute;
+    width: 20px;
+}
+
+.estilizado::before {
+    left: -60px;
+}
+
+.estilizado::after {
+    right: -1.5rem;
+}
+
+.header-checkout {
+    background: #05159c;
+    color: #fff;
+    padding: 0.75rem 0px;
+    border-radius: 0px 0px 30px 30px;
+    -moz-border-radius: 0px 0px 30px 30px;
+    -webkit-border-radius: 0px 0px 30px 30px;
+    margin: 0px;
+
+}
+
+.btn span.glyphicon {
+    opacity: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.disponible {
+    border: solid 2px #05159c;
+}
+
+.ocupado {
+    border: solid 2px #ccc;
+}
+
+.seleccionada {
+    border: solid 2px #05159c;
+}
+
+.butacas {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+ul.ref-butaca {
+    font-size: 11px;
+    display: block;
+}
+
+.ref-butaca .ref {
+    display: block;
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    width: 22px;
+    height: 22px;
+}
+
+.ref-butaca input {
+    position: absolute;
+    left: 3.2px;
+    top: 2.5px;
+}
+
+.fila-but {
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+
+}
+
+.opciones-adicional {
+    margin: 0px 1rem;
+    background-color: #fff;
+    padding: 0.2rem 0.2rem 0.5rem;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+}
+
+.opciones-adicional h2 {
+    font-size: 1rem !important
+}
+
+.opciones-adicional a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.opciones-adicional a:hover {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none
+}
+
+.opciones-precio {
+    margin: 0px 1rem;
+    background-color: #e3e3e3;
+    padding: 0.2rem 0.2rem 0.5rem;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+}
+
+.total h2 {
+    font-size: 14px !important;
+}
+
+.total h3 {
+    font-size: 24px !important;
+}
+
+.promociones {
+    margin: 0px 1rem;
+    background-color: #e3e3e3;
+    padding: 0.2rem 0.2rem 0.5rem;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
+}
+.promociones .custom-control{border: none!important;}
+
+div#codigopersonal{display: none;}
+input#descuentopersonal:checked ~ div#codigopersonal {
+	display:block;
+}
+
+input#hide:checked ~ div#content {
+	display:none;
+}
+.escondido{display: none;}
+
+/*spinner*/
+.content{
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#fff;
+}
+.spinner{width:100px;height:100px;
+background:transparent:
+border-top-color:#efef;
+border-bottom-color:#efef;
+border-left-color: black;
+animation:spin 1.5s linear infinite;
+position:relative;
+}
+
+@keyframes spin{
+0%{background:transparent;
+transform:rotate8720deg);
+}
