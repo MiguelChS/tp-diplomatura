@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>icon/maps/local_play_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M33.6,24.1764706 C33.6,22.9147059 34.68,21.8823529 36,21.8823529 L36,17.2941176 C36,16.0323529 34.92,15 33.6,15 L14.4,15 C13.08,15 12.012,16.0323529 12.012,17.2941176 L12.012,21.8823529 C13.332,21.8823529 14.4,22.9147059 14.4,24.1764706 C14.4,25.4382353 13.332,26.4705882 12,26.4705882 L12,31.0588235 C12,32.3205882 13.08,33.3529412 14.4,33.3529412 L33.6,33.3529412 C34.92,33.3529412 36,32.3205882 36,31.0588235 L36,26.4705882 C34.68,26.4705882 33.6,25.4382353 33.6,24.1764706 Z M28.3743963,29.8235294 L24.006101,27.1668449 L19.6378057,29.8235294 L20.9556154,25.0645989 L16.9411765,21.9574332 L22.1147999,21.6686631 L24.006101,17.1176471 L25.8852001,21.6802139 L31.0588235,21.968984 L27.0443846,25.0761497 L28.3743963,29.8235294 Z" id="path-1"></path>
+    </defs>
+    <g id="Pantallas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Resumen-de-salida" transform="translate(-28.000000, -269.000000)">
+            <g id="Group" transform="translate(16.000000, 254.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon/maps/local_play_24px" fill="#179EA4" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
