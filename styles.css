@@ -606,7 +606,7 @@ ul.ref-butaca {
     -moz-box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
     box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
 }
-
+img.snack{width: auto}
 .total h2 {
     font-size: 14px !important;
 }
@@ -629,6 +629,7 @@ ul.ref-butaca {
     box-shadow: 10px 10px 17px -2px rgba(0, 0, 0, 0.32);
 }
 .promociones .custom-control{border: none!important;}
+.mensaje{background-color: #e0f8f8;color:rgba(0, 0, 0, 0.6);margin: 0px 1rem; padding: 10px}
 
 div#codigopersonal{display: none;}
 input#descuentopersonal:checked ~ div#codigopersonal {
@@ -639,6 +640,10 @@ input#hide:checked ~ div#content {
 	display:none;
 }
 .escondido{display: none;}
+.ticket{background: url(images/fondo-ticket.png) no-repeat; background-position: center;background-size: cover; -webkit-border-radius: 40px;
+-moz-border-radius: 40px;
+border-radius: 40px; margin: 0px 1rem}
+.bordebottomray{border-bottom:dashed 1px #ccc}
 
 /*spinner*/
 .content{

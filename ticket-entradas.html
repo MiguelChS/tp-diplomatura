@@ -2,20 +2,21 @@
 <html lang="es">
 
 <head>
-    <title>Pago con tarjeta de crédito CineTime</title>
+    <title>Entradas en Cine Buddy</title>
     <meta charset="utf-8">
-    <meta name="title" content="Título de la WEB">
-    <meta name="description" content="Descripción de la WEB">
+    <meta name="title" content="Cine Buddy">
+    <meta name="description" content="Cine Buddy es un sitio para orgenizar salidas al cine con tus amigos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="spinner.scss" crossorigin="anonymous">
+    <link rel="stylesheet" href="spinner.scss" crossorigin="anonymous">
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
-    
+
 </head>
-<body style="background-color:#05159c">
-        <header class="header-checkout">
+
+<body style="background-color:#05159c;">
+    <header class="header-checkout">
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
@@ -26,41 +27,73 @@
                     </ul>
                 </div>
             </div>
-            <div class="row"><div class="col-12 text center">
-            <h1><i class="fas fa-check-circle"></i> ¡Listo ya adquiríste tus entradas!</h1>
+            <div class="row">
+                <div class="col-12 text center">
+                    <h1><i class="fas fa-check-circle"></i> ¡Listo ya adquiríste tus entradas!</h1>
+                </div>
+                <div class="col-12">
+                    <p>
+                        Compraste 3 entradas por $600 con Tarjeta Visa Crédito finalizada en 3456.
+                    </p>
+                </div>
             </div>
-                <div class="col-12"><p>
-                    Compraste 3 entradas por $600 con Tarjeta Visa Crédito finalizada en 3456. 
-                    </p></div>
-            </div>
-            
+
         </div>
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="row">  
-                <div class="col-12 d-flex">
+        <div class="container">
+            <div class="row">
+                <div class="ticket">
+                    <div class="col-12 d-flex">
                         <div class="col-4 pelicula"><img src="images/resumen-rey-leon.png" alt="El rey león"></div>
                         <div class="col-8 pelicula">
-                            <button type="button" class="btn share" data-toggle="modal" data-target="#compartir"><i class="fas fa-share-alt"></i></button></div></div>
-                    <div class="col-12">     
-                    <h2>El Rey León</h2>
-                    <p>3D Subtitulada<br>
-                       Martes 20/12 - 23:30hs.</p>
-                        <a>Hoyts Abasto</a>    
+                            <button type="button" class="btn share" data-toggle="modal" data-target="#compartir"><i class="fas fa-share-alt"></i></button></div>
+                    </div>
+                    <div class="col-12 ">
+                        <h2>El Rey León</h2>
+                        <p>3D Subtitulada<br>
+                            Martes 20/12 - 23:30hs.</p>
+                        <a>Hoyts Abasto</a>
+                    </div>
+
+                    <div class="col-12 d-flex">
+                        <div class="col-5"><img src="images/qr_entradas.png" alt="QR Entradas"></div>
+                        <div class="col-8">
+                            <p>Tus 3 entradas</p>
+                            <p>QWVR45</p>
+                            <p>Orden 239575</p>
                         </div>
                     </div>
-                <div class="col-12 d-flex">
-                    <div class="col-5"><img src="images/qr_entradas.png" alt="QR Entradas"></div><div class="col-8"><p>Tus 3 entradas</p><p>QWVR45</p><p>Orden 239575</p></div>    
-                            </div>
-                    </div>
-        <div class="row">
-            <div class="col-12"><p>También enviamos las entradas a tu email. ¡Que disfrutes la película!</p>
+                </div>
             </div>
-        
+            <div class="row">
+                <div class="col-12">
+                    <div class="mensaje">
+                    <p>También enviamos las entradas a tu email. ¡Que disfrutes la película!</p></div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="tus-encuestas.html" class="btn btn-lg btn-primary">Ir a Inicio</a></div>
+            </div>
+            <div class="modal fade" id="compartir" tabindex="-1" role="dialog" aria-labelledby="compartir" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <a href="ticket-entradas.html"><img src="images/compartir.svg" alt="Compartir película"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row"><a href="pago.html" class="">Ir a Inicio</a></div>
     </main>
 
 
@@ -88,6 +121,9 @@
             }
             btn.closest('.number-spinner').find('input').val(newVal);
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>
