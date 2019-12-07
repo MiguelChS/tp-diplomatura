@@ -56,7 +56,9 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-1">
-                    <i class="fas fa-chevron-left"></i>
+                    <a onclick="cleanData()" tabindex="0" href="primeros-pasos.html" >
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
                 </div>
                 <div class="col-10">
                     <h1 style="padding: 0;margin: 0;">Crear salida</h1>
@@ -97,10 +99,12 @@
                             ¿Cuántas personas van?
                         </p>
                         <div>
-                            <button tabindex="0" onclick="clickBtn()" class="btn btn-radius" data-message="Haciendo agregando Miguel" aria-label="Restar personas">
+                            <button tabindex="0" onclick="clickBtn()" class="btn btn-radius"
+                                data-message="Haciendo agregando Miguel" aria-label="Restar personas">
                                 <i class="fas fa-minus"></i>
                             </button>
-                            <button tabindex="0" onclick="clickBtn('true')" class="btn btn-radius" data-message="Haciendo agregando Miguel" aria-label="Agregar personas">
+                            <button tabindex="0" onclick="clickBtn('true')" class="btn btn-radius"
+                                data-message="Haciendo agregando Miguel" aria-label="Agregar personas">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -229,7 +233,7 @@
                     document.querySelector("#diaHoras").innerHTML = "";
                     horarios.forEach(function (item) {
                         var p = document.createElement("p");
-                        p.setAttribute("arial-label",item.labelAccesible);
+                        p.setAttribute("arial-label", item.labelAccesible);
                         p.innerHTML = item.label;
                         document.querySelector("#diaHoras").appendChild(p);
                     });
