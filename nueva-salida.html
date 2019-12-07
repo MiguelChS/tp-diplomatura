@@ -9,8 +9,46 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <style>
+        .contentInput {
+            border-radius: 4px;
+            border: solid 1px rgba(0, 0, 0, 0.32);
+            display: flex;
+            padding: 11px 10px;
+            margin-top: 16px;
+        }
+
+        .contentInput .iconInput {
+            flex-grow: 1;
+            align-self: flex-start;
+            padding-top: 4px;
+        }
+
+        .contentInput .contentLabel {
+            flex-grow: 8;
+        }
+
+        .contentInput .btn-radius {
+            width: 26px;
+            height: 26px;
+            padding: 0;
+        }
+
+        .contentInput .select-a {
+            text-align: right;
+        }
+
+        div {
+            margin-top: initial;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,41 +67,86 @@
     <main>
         <div class="container-fluid select-pelicula">
             <a href="elegir-pelicula.html">
-                <div class="row option-cine mx-auto">
-                    <div id="salida_pelicula" class="col-10 opciones"><i class="fas fa-film"></i> Elegí la película</div>
-                    <div class="col-2 text-center"><i class="fas fa-chevron-right select-a"></i></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contentInput">
+                            <i class="fas fa-film iconInput"></i>
+                            <p class="contentLabel" id="salida_pelicula">Elegí la película</p>
+                            <i class="fas fa-chevron-right select-a iconInput"></i>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="elegir-cine.html">
-                <div class="row option-cine mx-auto">
-                    <div id="salida_cine" class="col-10 opciones"><i class="fas fa-ticket-alt"></i> Elegí el cine</div>
-                    <div class="col-2 text-center"><i class="fas fa-chevron-right select-a"></i></div>
-                </div>
-            </a>
-            <div class="row option-cine mx-auto personas">
-                <div class="col-5 opciones"><i class="fas fa-users"></i> ¿Cuántas personas van?</div>
-                <div class="col-7">
-                    <div class="input-group number-spinner">
-                        <input id="salida_personas" type="text" class="form-control text-left number-person" value="1">
-                        <span class="input-group-btn">
-                            <button class="btn btn-radius" data-dir="dwn" aria-label="Agregar personas"><i class="fas fa-minus"></i></button>
-                        </span>
-                        <span class="input-group-btn">
-                            <button class="btn btn-radius" data-dir="up" aria-label="Restar personas"><i class="fas fa-plus"></i></button>
-                        </span>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contentInput">
+                            <i class="fas fa-ticket-alt iconInput"></i>
+                            <p class="contentLabel" id="salida_cine">Elegí el cine</p>
+                            <i class="fas fa-chevron-right select-a iconInput"></i>
+                        </div>
                     </div>
-
-                </div>
-            </div>
-            <a href="dias-y-horarios.html">
-                <div class="row option-cine mx-auto">
-                    <div class="col-10 opciones"><i class="fas fa-calendar-day"></i> Seleccioná los posibles horarios</div>
-                    <div class="col-2 text-center"><i class="fas fa-chevron-right select-a"></i></div>
                 </div>
             </a>
             <div class="row">
-                <div class="col-12 m-top"><a href="#" class="btn btn-primary btn-lg">Enviar encuesta</a></div>
-                <div class="col-12 m-top"><a onclick="cleanData()" href="primeros-pasos.html" class="btn btn-secondary btn-lg">Cancelar</a></div>
+                <div class="col-12">
+                    <div class="contentInput">
+                        <i class="fas fa-ticket-alt iconInput"></i>
+                        <p class="contentLabel" id="salida_personas">¿Cuántas personas van?</p>
+                        <div>
+                            <button onclick="clickBtn()" class="btn btn-radius" data-dir="dwn"
+                                aria-label="Agregar personas">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button onclick="clickBtn('true')" class="btn btn-radius" data-dir="up"
+                                aria-label="Restar personas">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="dias-y-horarios.html">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contentInput">
+                            <i class="fas fa-calendar-day iconInput"></i>
+                            <div class="contentLabel" id="diaHoras">
+                                <p>Seleccioná los posibles horarios</p>
+                            </div>
+                            <i class="fas fa-chevron-right select-a iconInput"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="row">
+                <div class="col-12 m-top">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#compartir">
+                        Enviar encuesta
+                    </button>
+                </div>
+                <div class="col-12 m-top">
+                    <a onclick="cleanData()" href="primeros-pasos.html" class="btn btn-secondary btn-lg">
+                        Cancelar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="compartir" tabindex="-1" role="dialog" aria-labelledby="compartir"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 30px;border: 0;">
+                    <div class="modal-body text-center">
+                        <a href="contacto-wp-encuesta.html"><img src="images/share.png" /></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            style="border: 1px solid #e8e5e5;background-color: #f7f7f7;border-radius: 40px;color: #3f8be2;padding: 8px 0;"
+                            data-dismiss="modal">
+                            CANCELAR
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -82,61 +165,83 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script>
-        $(document).on('click', '.number-spinner button', function() {
-            var btn = $(this),
-                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
-                newVal = 0;
+        function agrearPersonas(cantidad) {
+            var texto = cantidad;
+            if (cantidad == 0) {
+                texto = '¿Cuántas personas van?';
+            }
+            if (cantidad == 1) {
+                texto = texto + " Persona"
+            }
+            if (cantidad > 1) {
+                texto = texto + " Personas"
+            }
+            document.querySelector("#salida_personas").innerHTML = texto;
+            window.localStorage.setItem("personas", cantidad);
+        }
 
-            if (btn.attr('data-dir') == 'up') {
-                newVal = parseInt(oldValue) + 1;
+        var cantidadPersonas = 0;
+        function clickBtn(seSuma) {
+            if (seSuma) {
+                cantidadPersonas++;
             } else {
-                if (oldValue > 1) {
-                    newVal = parseInt(oldValue) - 1;
-                } else {
-                    newVal = 1;
+                if (cantidadPersonas > 0) {
+                    cantidadPersonas--;
                 }
             }
-            btn.closest('.number-spinner').find('input').val(newVal);
-            //guardamos el valor seleccionado
-            window.localStorage.setItem("personas", newVal);
-        });
+            agrearPersonas(cantidadPersonas);
+        }
 
-        function cleanData(){
+        function cleanData() {
             window.localStorage.clear();
         }
 
-        function getData(key, classIcon){
-            var data = window.localStorage.getItem(key);
-            if(data){
-                return "<i class='"+classIcon+"'></i> " + data;
-            }
-            return null;
-        }
-
-        (function() {
+        (function () {
             //cargar pelicula
-            var pelicula = getData("pelicula","fas fa-film")
-            if(pelicula){
+            var pelicula = window.localStorage.getItem("pelicula");
+            if (pelicula) {
                 document.querySelector("#salida_pelicula").innerHTML = pelicula;
-            }   
+            }
             //cargar cine 
-            var cine = getData("cine","fas fa-ticket-alt")
-            if(cine){
+            var cine = window.localStorage.getItem("cine");
+            if (cine) {
                 document.querySelector("#salida_cine").innerHTML = cine;
             }
             //cargar personas
             var personas = window.localStorage.getItem("personas");
-            if(personas) {
-                document.querySelector("#salida_personas").value = personas;
+            if (personas) {
+                cantidadPersonas = parseInt(personas, 10);
+                agrearPersonas(cantidadPersonas);
+            }
+            //cargar de horarios
+            var horarios = window.localStorage.getItem("horarios");
+            if (horarios) {
+                horarios = JSON.parse(horarios);
+                if (horarios.length) {
+                    document.querySelector("#diaHoras").innerHTML = "";
+                    horarios.forEach(function (item) {
+                        var p = document.createElement("p");
+                        p.innerHTML = item.label;
+                        document.querySelector("#diaHoras").appendChild(p);
+                    });
+                }
             }
         })();
 
     </script>
 
-</body></html>
+</body>
+
+</html>
