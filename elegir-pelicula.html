@@ -19,7 +19,7 @@
     <header>
         <div class="container-fluid">
             <div class="row text-center">
-                <div class="col-1"><a href="nueva-salida.html" title="Volver a Nueva salida"><i class="fas fa-chevron-left"></i></a></div>
+                <div class="col-1"><a href="nueva-salida.html" onclick="cleanPelicula()" title="Volver a Nueva salida"><i class="fas fa-chevron-left"></i></a></div>
                 <div class="col-10">
                     <h1>Elegir Película</h1>
                 </div>
@@ -55,7 +55,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="seleccion-pelicula">
@@ -159,6 +158,9 @@
         });
         function selectPelicula(namePelicula){
             window.localStorage.setItem("pelicula",namePelicula);
+        }
+        function cleanPelicula(){
+            window.localStorage.setItem("pelicula", "");
         }
     </script>
 
