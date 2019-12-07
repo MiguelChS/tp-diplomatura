@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             $('#modalenviado').modal('show')
         });
@@ -23,14 +24,12 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-1">
-                    <a href="primeros-pasos.html" title="Volver a primeros pasos"><i class="fas fa-chevron-left"></i></a></div>
-                <div class="col-10">
-                    <h1>Cine Buddy</h1>
-                </div>
+    <header style="margin:0;padding: 0;">
+        <div class="row" style="margin: 0">
+            <div class="col-12" style="margin: 0;padding: 16px 0;">
+                <img style="width:32px;position: absolute; left: 16px;top: 12px;" src="images/circular.png"
+                    alt="Foto de perfil">
+                <h1 style="margin: 0; padding: 0;">Cine Buddy</h1>
             </div>
         </div>
     </header>
@@ -49,18 +48,21 @@
                         <div class="col-6 pelicula">
                             <h3>Rey León</h3>
                             <p>Hoyts Abasto</p>
-                            <p class="respuestas-encuestas"><i class="fas fa-check-circle"></i> ¡Tus amigos respondieron!</p>
-                            <a href="resultado-encuesta.html" class="linkblue">Ver resultados <i class="fas fa-chevron-right"></i></a>
+                            <p class="respuestas-encuestas"><i class="fas fa-check-circle"></i> ¡Tus amigos
+                                respondieron!</p>
+                            <a href="resultado-encuesta.html" class="linkblue">Ver resultados <i
+                                    class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 m-top"><a onclick="cleanData()" href="nueva-salida.html" class="btn btn-primary btn-lg">Crear nueva encuesta</a></div>
+            <div class="col-12 m-top"><a onclick="cleanData()" href="nueva-salida.html"
+                    class="btn btn-primary btn-lg">Crear nueva encuesta</a></div>
         </div>
 
-        <div class="modal fade" id="modalenviado" role="dialog" aria-labelledby="compartir">
+        <div style="margin-top: 0;" class="modal fade" id="modalenviado" role="dialog" aria-labelledby="compartir">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content icon-share">
                     <div class="modal-body text-center">
@@ -92,14 +94,22 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script>
-        function cleanData(){
+        function cleanData() {
             window.localStorage.clear();
         }
     </script>
 
-</body></html>
+</body>
+
+</html>
