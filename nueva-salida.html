@@ -66,53 +66,52 @@
 
     <main>
         <div class="container-fluid select-pelicula">
-            <a href="elegir-pelicula.html">
+            <a href="elegir-pelicula.html" tabindex="0">
                 <div class="row">
                     <div class="col-12">
                         <div class="contentInput">
                             <i class="fas fa-film iconInput"></i>
-                            <p class="contentLabel" id="salida_pelicula">Elegí la película</p>
+                            <p class="contentLabel" id="salida_pelicula"></p>
                             <i class="fas fa-chevron-right select-a iconInput"></i>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="elegir-cine.html">
+            <a href="elegir-cine.html" tabindex="0">
                 <div class="row">
                     <div class="col-12">
                         <div class="contentInput">
-                            <i class="fas fa-ticket-alt iconInput"></i>
-                            <p class="contentLabel" id="salida_cine">Elegí el cine</p>
+                            <i class="fas fa-map-marker-alt iconInput"></i>
+                            <p class="contentLabel" id="salida_cine"></p>
                             <i class="fas fa-chevron-right select-a iconInput"></i>
                         </div>
                     </div>
                 </div>
             </a>
-            <div class="row">
+            <div class="row" tabindex="0">
                 <div class="col-12">
                     <div class="contentInput">
-                        <i class="fas fa-ticket-alt iconInput"></i>
+                        <i tabindex="-1" class="fas fa-user iconInput"></i>
                         <p class="contentLabel" id="salida_personas">¿Cuántas personas van?</p>
                         <div>
-                            <button onclick="clickBtn()" class="btn btn-radius" data-dir="dwn"
-                                aria-label="Agregar personas">
+                            <button tabindex="0" onclick="clickBtn()" class="btn btn-radius" data-dir="dwn"
+                                aria-label="Restar personas">
                                 <i class="fas fa-minus"></i>
                             </button>
-                            <button onclick="clickBtn('true')" class="btn btn-radius" data-dir="up"
-                                aria-label="Restar personas">
+                            <button tabindex="0" onclick="clickBtn('true')" class="btn btn-radius" data-dir="up"
+                                aria-label="Agregar personas">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="dias-y-horarios.html">
+            <a href="dias-y-horarios.html" tabindex="0">
                 <div class="row">
                     <div class="col-12">
                         <div class="contentInput">
                             <i class="fas fa-calendar-day iconInput"></i>
                             <div class="contentLabel" id="diaHoras">
-                                <p>Seleccioná los posibles horarios</p>
                             </div>
                             <i class="fas fa-chevron-right select-a iconInput"></i>
                         </div>
@@ -121,12 +120,12 @@
             </a>
             <div class="row">
                 <div class="col-12 m-top">
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#compartir">
+                    <button type="button" tabindex="0" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#compartir">
                         Enviar encuesta
                     </button>
                 </div>
                 <div class="col-12 m-top">
-                    <a onclick="cleanData()" href="primeros-pasos.html" class="btn btn-secondary btn-lg">
+                    <a onclick="cleanData()" tabindex="0" href="primeros-pasos.html" class="btn btn-secondary btn-lg">
                         Cancelar
                     </a>
                 </div>
@@ -137,10 +136,11 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content" style="border-radius: 30px;border: 0;">
                     <div class="modal-body text-center">
-                        <a href="contacto-wp-encuesta.html"><img src="images/share.png" /></a>
+                        <a href="contacto-wp-encuesta.html" tabindex="0"><img src="images/share.png" /></a>
                     </div>
                     <div class="modal-footer">
                         <button
+                            tabindex="0"
                             style="border: 1px solid #e8e5e5;background-color: #f7f7f7;border-radius: 40px;color: #3f8be2;padding: 8px 0;"
                             data-dismiss="modal">
                             CANCELAR
@@ -213,11 +213,15 @@
             var pelicula = window.localStorage.getItem("pelicula");
             if (pelicula) {
                 document.querySelector("#salida_pelicula").innerHTML = pelicula;
+            }else{
+                document.querySelector("#salida_pelicula").innerHTML = "Elegí la película";
             }
             //cargar cine 
             var cine = window.localStorage.getItem("cine");
             if (cine) {
                 document.querySelector("#salida_cine").innerHTML = cine;
+            }else {
+                document.querySelector("#salida_cine").innerHTML = "Elegí el cine";
             }
             //cargar personas
             var personas = window.localStorage.getItem("personas");
@@ -237,6 +241,10 @@
                         document.querySelector("#diaHoras").appendChild(p);
                     });
                 }
+            }else {
+                var p = document.createElement("p");
+                p.innerHTML = "Seleccioná los posibles horarios";
+                document.querySelector("#diaHoras").appendChild(p);
             }
         })();
 
