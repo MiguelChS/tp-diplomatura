@@ -53,15 +53,15 @@
                 <div class="promociones">
                     <div class="cine">
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="promolanacion" name="customRadio" class="custom-control-input pull-right">
+                            <input onclick="clickPromociones()" type="radio" id="promolanacion" name="customRadio" class="custom-control-input pull-right">
                             <label class="custom-control-label" for="promolanacion">Con Club La Nación</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="promoclarin" name="customRadio" class="custom-control-input pull-right">
+                            <input onclick="clickPromociones()" type="radio" id="promoclarin" name="customRadio" class="custom-control-input pull-right">
                             <label class="custom-control-label" for="promoclarin">Con Clarín 365</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="promofrances" name="customRadio" class="custom-control-input pull-right">
+                            <input onclick="clickPromociones()" type="radio" id="promofrances" name="customRadio" class="custom-control-input pull-right">
                             <label class="custom-control-label" for="promofrances">Con BBVA Francés</label>
                         </div>
 
@@ -78,7 +78,7 @@
                 <div class="promociones">
                     <div class="cine">
                         <div class="custom-control custom-radio">
-                            <input name="descuento" type="radio" class="custom-control-input pull-right" id="codigopersonal">
+                            <input onclick="clickDescuento()" name="descuento" type="radio" class="custom-control-input pull-right" id="codigopersonal">
                             <label class="custom-control-label activar-descuento" for="codigopersonal">50% off con Club Personal</label>
                         </div>
                         <!--descuento a mostrar-->
@@ -93,7 +93,7 @@
                     <div class="promociones">
                         <div class="cine">
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="descuentoclaro" name="descuento" class="custom-control-input pull-right">
+                                <input onclick="clickDescuento()" type="radio" id="descuentoclaro" name="descuento" class="custom-control-input pull-right">
                                 <label class="custom-control-label" for="descuentoclaro">50% off con Club Claro</label>
                             </div>
                         </div>
@@ -112,5 +112,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function clickPromociones(){
+            document.querySelector("#promocion").classList.remove("escondido")
+            document.querySelector("#descuento").classList.add("escondido")
+        }
+        function clickDescuento(){
+            document.querySelector("#descuento").classList.remove("escondido")
+            document.querySelector("#promocion").classList.add("escondido")
 
+        }
+    </script>
 </body></html>

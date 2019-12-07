@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 
@@ -22,8 +23,10 @@
             <div class="row">
                 <div class="container">
                     <ul class="progressbar">
-                        <li class="active"><a href="seleccion-de-butacas.html" class="estilizado"><span><br>Butacas</span></a></li>
-                        <li><a href="#" class="estilizado"><span><i class="fas fa-check-circle"></i><br>Pago</span></a></li>
+                        <li class="active"><a href="seleccion-de-butacas.html"
+                                class="estilizado"><span><br>Butacas</span></a></li>
+                        <li><a href="#" class="estilizado"><span><i class="fas fa-check-circle"></i><br>Pago</span></a>
+                        </li>
                         <li><a href="#"><span><br>Entradas</span></a></li>
                     </ul>
                 </div>
@@ -82,66 +85,78 @@
             <div class="row">
                 <div class="col">
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="tarjetadebito" name="customRadio" class="custom-control-input pull-right">
+                        <input onclick="show()" type="radio" id="tarjetadebito" name="customRadio"
+                            class="custom-control-input pull-right">
                         <label class="custom-control-label" for="tarjetadebito">Tarjeta de débito</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="tarjetacredito" name="customRadio" class="custom-control-input pull-right">
+                        <input onclick="show('true')" type="radio" id="tarjetacredito" name="customRadio"
+                            class="custom-control-input pull-right">
                         <label class="custom-control-label" for="tarjetacredito">Tarjeta de crédito</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="reservar" name="customRadio" class="custom-control-input pull-right">
+                        <input onclick="show()" type="radio" id="reservar" name="customRadio" class="custom-control-input pull-right">
                         <label class="custom-control-label" for="reservar">Reservar entradas</label>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-form style="display: none;">
                 <div class="col">
-                    <h1>Métodos de pago</h1>
+                    <h1>Datos de pago</h1>
                     <p>Información de tarjeta</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-form style="display: none;">
                 <div class="col-12">
-                <div class="form-group">
+                    <div class="form-group">
                         <label for="nombretarjeta">Nombre como figura en la tarjeta</label>
-                        <input type="text" class="form-control" id="nombretarjeta" aria-describedby="Nombre de tarjeta" placeholder="Cómo figura en la tarjeta">
+                        <input type="text" class="form-control" id="nombretarjeta" aria-describedby="Nombre de tarjeta"
+                            placeholder="Cómo figura en la tarjeta">
                     </div>
-                    </div>
+                </div>
                 <div class="col-12">
                     <div class="form-group">
                         <label for="numerotarjeta">Número de tarjeta (sin guiones o espacios) </label>
-                        <input type="text" class="form-control" id="numerotarjeta" aria-describedby="Número de tarjeta" placeholder="xxxx xxxx xxxx xxxx">
+                        <input type="text" class="form-control" id="numerotarjeta" aria-describedby="Número de tarjeta"
+                            placeholder="xxxx xxxx xxxx xxxx">
                     </div>
                 </div>
-                <div class="col-6"><div class="form-group">
+                <div class="col-6">
+                    <div class="form-group">
                         <label for="fechavencimiento">Fecha de vencimiento</label>
-                        <input type="number" class="form-control" id="fechavencimiento" aria-describedby="Fecha de vencimiento" placeholder="xx/xx">
-                    </div></div>
-                <div class="col-6"><div class="form-group">
+                        <input type="number" class="form-control" id="fechavencimiento"
+                            aria-describedby="Fecha de vencimiento" placeholder="xx/xx">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
                         <label for="codigoseguridad">Código de seguridad</label>
-                        <input type="number" class="form-control" id="codigoseguridad" aria-describedby="Código de seguridad" placeholder="xxx">
-                    </div></div>
+                        <input type="number" class="form-control" id="codigoseguridad"
+                            aria-describedby="Código de seguridad" placeholder="xxx">
+                    </div>
+                </div>
             </div>
-            <div class="row">
+            <div class="row" data-form style="display: none;">
                 <div class="col">
                     <h1>Datos de tarjeta de descuento</h1>
-
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-form style="display: none;">
                 <div class="col-12">
-                <div class="form-group">
+                    <div class="form-group">
                         <label for="nombretarjetadesc">Nombre como figura en la tarjeta</label>
-                        <input type="text" class="form-control" id="nombretarjetadesc" aria-describedby="Nombre de tarjeta de descuento" placeholder="Cómo figura en la tarjeta">
+                        <input type="text" class="form-control" id="nombretarjetadesc"
+                            aria-describedby="Nombre de tarjeta de descuento" placeholder="Cómo figura en la tarjeta">
                     </div>
                 </div>
                 <div class="col-12">
-                 <div class="form-group">
+                    <div class="form-group">
                         <label for="numerotarjetadesc">Número de tarjeta (sin guiones o espacios) </label>
-                        <input type="text" class="form-control" id="numerotarjetadesc" aria-describedby="Número de tarjeta de descuento" placeholder="xxxx xxxx xxxx xxxx">
-                    </div></div>
-                            </div>
+                        <input type="text" class="form-control" id="numerotarjetadesc"
+                            aria-describedby="Número de tarjeta de descuento" placeholder="xxxx xxxx xxxx xxxx">
+                    </div>
+                </div>
+            </div>
             <div class="row"><a href="ticket-entradas.html" class="btn btn-lg btn-primary">Pagar</a></div>
         </div>
     </main>
@@ -149,13 +164,19 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script>
-        $(document).on('click', '.number-spinner button', function() {
+        $(document).on('click', '.number-spinner button', function () {
             var btn = $(this),
                 oldValue = btn.closest('.number-spinner').find('input').val().trim(),
                 newVal = 0;
@@ -171,6 +192,22 @@
             }
             btn.closest('.number-spinner').find('input').val(newVal);
         });
+        function show(flag) {
+            if(flag){
+                document.querySelectorAll('div[data-form]')
+                .forEach(function (item) {
+                    item.style.display = "flex"
+                })
+            }else{
+                document.querySelectorAll('div[data-form]')
+                .forEach(function (item) {
+                    item.style.display = "none"
+                })
+            }
+            
+        }
     </script>
 
-</body></html>
+</body>
+
+</html>
